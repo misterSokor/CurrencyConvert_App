@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversion Results</title>
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+<h1>Conversion Results</h1>
+<ul>
+    <li th:each="conversion : ${conversions}">
+        <span th:text="${conversion.currency}"></span>:
+        <span th:text="${conversion.amount}"></span>
+    </li>
+</ul>
+<a href="/">Back</a>
+</body>
+</html>
